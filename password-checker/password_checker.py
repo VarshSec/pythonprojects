@@ -11,9 +11,8 @@ def check_password_strength(password):
     if any(c.isdigit() for c in password):
         score += 1
     if any(c in "!@#$%^&*()-_=+[]{};:'\",.<>?/\\|" for c in password):
-        score += 1
-
-    # Return humanized feedback
+        score += 
+  
     if score <= 2:
         return "❌ Weak: Easy to guess. Add more length, numbers, and symbols."
     elif score in (3, 4):
